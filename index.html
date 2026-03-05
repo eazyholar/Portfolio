@@ -1,67 +1,238 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Olanrewaju Abdulazeez | Portfolio</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
-<title>Olanrewaju Abdulazeez | Portfolio</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="assets/css/styles.css">
-
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
+  <div class="bg-glow"></div>
 
-<header>
+  <!-- TOP NAV (matches your about page style) -->
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html" data-nav>
+          <div class="brand-badge"></div>
+          <div>
+            <p class="brand-title">Olanrewaju Abdulazeez</p>
+            <p class="brand-sub">UI/UX • Graphics • Discord • Webflow • Web3 Community</p>
+          </div>
+        </a>
 
-<h1>Olanrewaju Abdulazeez</h1>
+        <div class="nav-links">
+          <a href="index.html" data-nav>Home</a>
+          <a href="about.html" data-nav>About</a>
+          <a href="services.html" data-nav>Services</a>
+          <a href="work.html" data-nav>Work</a>
+          <a href="contact.html" data-nav>Contact</a>
+        </div>
 
-<p>
-UI/UX Designer • Graphics Designer • Webflow Developer • Discord Server Developer • Web3 Community Manager
-</p>
+        <div class="nav-cta">
+          <a class="btn" href="mailto:Kamaldeenbasheerah@gmail.com">Email</a>
+          <a class="btn btn-primary" href="contact.html">Let’s work</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-<nav>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
 
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="work.html">Work</a>
-<a href="contact.html">Contact</a>
+        <!-- Left -->
+        <div class="hero-copy">
+          <div class="pill">Available for projects</div>
 
-</nav>
+          <h1 class="h1">
+            Premium UI/UX, brand visuals, and secure Discord systems —
+            <span class="accent">built to convert.</span>
+          </h1>
 
-</header>
+          <p class="lead">
+            I’m <b>Olanrewaju Abdulazeez</b> — a multi-skill creative building modern product experiences,
+            clean Webflow websites for businesses/brands, and Discord communities with real structure + security.
+          </p>
 
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="work.html">View projects</a>
+            <a class="btn" href="services.html">See services</a>
+          </div>
 
-<section>
+          <div class="chips">
+            <span class="chip">UI/UX Design</span>
+            <span class="chip">Graphics Design</span>
+            <span class="chip">Webflow Sites</span>
+            <span class="chip">Discord Setup</span>
+            <span class="chip">Web3 Community</span>
+          </div>
 
-<img src="assets/img/portrait.jpg" alt="Olanrewaju Abdulazeez portrait" width="280">
+          <div class="stats">
+            <div class="stat">
+              <p class="stat-big">Clarity-first</p>
+              <p class="stat-sub">User flows that make sense</p>
+            </div>
+            <div class="stat">
+              <p class="stat-big">Brand polish</p>
+              <p class="stat-sub">Modern visuals & layouts</p>
+            </div>
+            <div class="stat">
+              <p class="stat-big">Security-ready</p>
+              <p class="stat-sub">Wick/verification/anti-raid</p>
+            </div>
+          </div>
+        </div>
 
-<h2>Building Premium Digital Experiences</h2>
+        <!-- Right (portrait + proof cards) -->
+        <div class="hero-side">
+          <div class="portrait-card">
+            <img class="portrait" src="assets/img/portrait.jpg" alt="Olanrewaju Abdulazeez portrait" />
+            <div class="portrait-glass">
+              <p class="portrait-name">Olanrewaju Abdulazeez</p>
+              <p class="portrait-role">UI/UX • Webflow • Discord • Graphics</p>
+            </div>
+          </div>
 
-<p>
-I help businesses, brands, and Web3 communities build clean user experiences,
-professional websites, and secure Discord communities.
-</p>
+          <div class="mini-grid">
+            <div class="mini-card">
+              <p class="mini-title">Webflow for brands</p>
+              <p class="mini-sub">Clean landing pages + business sites</p>
+            </div>
+            <div class="mini-card">
+              <p class="mini-title">Discord systems</p>
+              <p class="mini-sub">Roles, tickets, onboarding, moderation</p>
+            </div>
+            <div class="mini-card">
+              <p class="mini-title">Web3 community ops</p>
+              <p class="mini-sub">Structure, comms, and growth support</p>
+            </div>
+          </div>
+        </div>
 
-</section>
+      </div>
+    </section>
 
+    <!-- FEATURED WORK -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="pill">Selected work</div>
+          <h2 class="h2">Projects people hire me for</h2>
+          <p class="muted">
+            Replace these with your real projects anytime. Each card can link to your case study page in <b>work.html</b>.
+          </p>
+        </div>
 
-<footer>
+        <div class="cards-3">
+          <a class="work-card" href="work.html">
+            <div class="work-top">
+              <p class="work-tag">Discord</p>
+              <p class="work-title">Secure Discord Launch System</p>
+            </div>
+            <p class="work-desc">
+              Verification, anti-raid, tickets, onboarding, roles/permissions, and clean structure for scale.
+            </p>
+            <p class="work-link">View details →</p>
+          </a>
 
-<p>
-© 2026 Olanrewaju Abdulazeez
-</p>
+          <a class="work-card" href="work.html">
+            <div class="work-top">
+              <p class="work-tag">UI/UX</p>
+              <p class="work-title">Conversion-focused Landing UI</p>
+            </div>
+            <p class="work-desc">
+              Clear hierarchy, premium typography, and sections that guide users to your CTA.
+            </p>
+            <p class="work-link">View details →</p>
+          </a>
 
-</footer>
+          <a class="work-card" href="work.html">
+            <div class="work-top">
+              <p class="work-tag">Webflow</p>
+              <p class="work-title">Business Website Build</p>
+            </div>
+            <p class="work-desc">
+              Fast, clean, and responsive Webflow sites for brands — ready for real customers.
+            </p>
+            <p class="work-link">View details →</p>
+          </a>
+        </div>
+      </div>
+    </section>
 
-<script src="assets/js/main.js"></script>
+    <!-- SERVICES SNAPSHOT -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="pill">What I do</div>
+          <h2 class="h2">Services built for growth</h2>
+          <p class="muted">You can see full details on the Services page.</p>
+        </div>
 
+        <div class="cards-2">
+          <div class="info-card">
+            <p class="info-title">UI/UX Design</p>
+            <p class="info-desc">Product UI, redesigns, audits, and user flows that reduce friction and increase conversions.</p>
+            <a class="text-link" href="services.html">See UI/UX packages →</a>
+          </div>
+
+          <div class="info-card">
+            <p class="info-title">Graphics Design</p>
+            <p class="info-desc">Brand visuals, social assets, thumbnails, banners, and clean marketing design systems.</p>
+            <a class="text-link" href="services.html">See design packages →</a>
+          </div>
+
+          <div class="info-card">
+            <p class="info-title">Webflow Websites</p>
+            <p class="info-desc">Business websites and landing pages that look premium on mobile + desktop.</p>
+            <a class="text-link" href="services.html">See Webflow packages →</a>
+          </div>
+
+          <div class="info-card">
+            <p class="info-title">Discord + Web3 Community</p>
+            <p class="info-desc">Server setup, revamp, security bots, and community management support with clear operations.</p>
+            <a class="text-link" href="services.html">See community packages →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-card">
+          <div>
+            <div class="pill">Let’s build</div>
+            <h2 class="h2">Want a premium site or a secure community?</h2>
+            <p class="muted">
+              Send your goal + timeline. I’ll reply with a clear plan, scope, and next steps.
+            </p>
+          </div>
+
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="contact.html">Start a project</a>
+            <a class="btn" href="mailto:Kamaldeenbasheerah@gmail.com?subject=Project%20Inquiry%20-%20Olanrewaju%20Abdulazeez">Email me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p class="muted">© <span id="yr"></span> Olanrewaju Abdulazeez</p>
+      <p class="muted">UI/UX • Graphics • Webflow • Discord • Web3</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
