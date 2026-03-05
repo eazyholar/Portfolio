@@ -1,393 +1,67 @@
-/* =========
-   Olanrewaju Abdulazeez — Multi-page Portfolio
-   ========= */
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-/* (Optional) If you have Canva Sans, put the file in assets/fonts/CanvaSans.woff2 and uncomment:
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-@font-face{
-  font-family: "Canva Sans";
-  src: url("../fonts/CanvaSans.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-*/
+<title>Olanrewaju Abdulazeez | Portfolio</title>
 
-:root{
-  --bg: #000000;
-  --text: rgba(255,255,255,.92);
-  --muted: rgba(255,255,255,.65);
-  --soft: rgba(255,255,255,.08);
-  --soft2: rgba(255,255,255,.05);
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  --accent: #8B5CF6;
-  --accent2:#22C55E;
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-  --border: transparent; /* your request */
-  --radius: 20px;
-  --shadow: 0 24px 80px rgba(0,0,0,.55);
+<link rel="stylesheet" href="assets/css/styles.css">
 
-  --max: 1160px;
+</head>
 
-  --h: "League Spartan", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  --b: "Canva Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-}
+<body>
 
-*{ box-sizing: border-box; }
-html, body{ height: 100%; }
-body{
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--b);
-  line-height: 1.5;
-  overflow-x: hidden;
-}
+<header>
 
-a{ color: inherit; text-decoration: none; }
-a:hover{ opacity: .92; }
+<h1>Olanrewaju Abdulazeez</h1>
 
-.container{
-  width: 100%;
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 20px;
-}
+<p>
+UI/UX Designer • Graphics Designer • Webflow Developer • Discord Server Developer • Web3 Community Manager
+</p>
 
-.bg-glow{
-  position: fixed;
-  inset: -40vh -40vw auto -40vw;
-  height: 80vh;
-  pointer-events: none;
-  background:
-    radial-gradient(900px 500px at 25% 30%, rgba(139,92,246,.16), transparent 60%),
-    radial-gradient(900px 500px at 75% 40%, rgba(34,197,94,.10), transparent 60%);
-  filter: blur(18px);
-  opacity: 1;
-  z-index: 0;
-}
+<nav>
 
-.topbar{
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  backdrop-filter: blur(10px);
-  background: rgba(0,0,0,.55);
-  border-bottom: 1px solid var(--border);
-}
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="work.html">Work</a>
+<a href="contact.html">Contact</a>
 
-.nav{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap: 16px;
-  padding: 14px 0;
-}
+</nav>
 
-.brand{
-  display:flex;
-  align-items:center;
-  gap: 12px;
-  min-width: 240px;
-}
-.brand-badge{
-  width: 42px; height: 42px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, rgba(139,92,246,.95), rgba(34,197,94,.75));
-  box-shadow: 0 0 0 5px rgba(139,92,246,.18);
-}
-.brand-title{
-  font-family: var(--h);
-  font-weight: 800;
-  letter-spacing: .2px;
-  font-size: 18px;
-  margin: 0;
-}
-.brand-sub{
-  margin: 0;
-  font-size: 12px;
-  color: var(--muted);
-}
+</header>
 
-.navlinks{
-  display:flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.navlinks a{
-  font-size: 13px;
-  color: var(--muted);
-  padding: 10px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,.03);
-}
-.navlinks a.active{
-  color: var(--text);
-  background: rgba(255,255,255,.06);
-}
-.navlinks a:hover{
-  color: var(--text);
-  background: rgba(255,255,255,.06);
-}
 
-.actions{
-  display:flex;
-  gap: 10px;
-  align-items:center;
-  justify-content:flex-end;
-  min-width: 240px;
-}
+<section>
 
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap: 10px;
-  padding: 11px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,.04);
-  color: var(--text);
-  font-size: 13px;
-  font-weight: 800;
-  transform: translateY(0);
-  transition: transform .18s ease, background .18s ease;
-}
-.btn:hover{ transform: translateY(-1px); background: rgba(255,255,255,.06); }
-.btn.primary{
-  background: linear-gradient(135deg, rgba(139,92,246,.95), rgba(34,197,94,.70));
-}
+<img src="assets/img/portrait.jpg" alt="Olanrewaju Abdulazeez portrait" width="280">
 
-.hero{
-  position: relative;
-  z-index: 1;
-  padding: 64px 0 28px;
-}
+<h2>Building Premium Digital Experiences</h2>
 
-.kicker{
-  display:inline-flex;
-  align-items:center;
-  gap: 10px;
-  padding: 9px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,.04);
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 800;
-}
+<p>
+I help businesses, brands, and Web3 communities build clean user experiences,
+professional websites, and secure Discord communities.
+</p>
 
-.grid{
-  display:grid;
-  gap: 20px;
-}
+</section>
 
-.hero-grid{
-  grid-template-columns: 1.08fr .92fr;
-  align-items: center;
-}
 
-.h1{
-  font-family: var(--h);
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  line-height: .95;
-  font-size: clamp(40px, 5.6vw, 74px);
-  margin: 14px 0 12px;
-}
+<footer>
 
-.lead{
-  color: var(--muted);
-  font-size: 15px;
-  max-width: 62ch;
-  margin: 0 0 22px;
-}
+<p>
+© 2026 Olanrewaju Abdulazeez
+</p>
 
-.pills{
-  display:flex;
-  flex-wrap:wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
-.pill{
-  font-size: 12px;
-  color: var(--muted);
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,.035);
-  padding: 8px 12px;
-  border-radius: 999px;
-}
+</footer>
 
-.hero-right{
-  display:grid;
-  gap: 14px;
-}
+<script src="assets/js/main.js"></script>
 
-.portrait-card{
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,.03);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  overflow:hidden;
-}
-.portrait-wrap{
-  position: relative;
-  aspect-ratio: 4 / 5;
-  background: radial-gradient(700px 350px at 30% 20%, rgba(139,92,246,.15), transparent 60%),
-              radial-gradient(700px 350px at 70% 40%, rgba(34,197,94,.10), transparent 60%),
-              rgba(255,255,255,.02);
-}
-.portrait{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display:block;
-  filter: contrast(1.02) saturate(1.05);
-}
-.portrait-badge{
-  position:absolute;
-  left: 14px;
-  bottom: 14px;
-  padding: 10px 12px;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  background: rgba(0,0,0,.55);
-  backdrop-filter: blur(10px);
-}
-.portrait-badge b{
-  font-family: var(--h);
-  letter-spacing: .2px;
-}
-.portrait-badge span{
-  display:block;
-  color: var(--muted);
-  font-size: 12px;
-  margin-top: 3px;
-}
-
-.card{
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,.03);
-  border-radius: var(--radius);
-  padding: 18px;
-}
-.card-title{
-  font-family: var(--h);
-  font-weight: 900;
-  letter-spacing: -0.01em;
-  margin: 0 0 6px;
-  font-size: 20px;
-}
-.card p{
-  margin: 0;
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.section{
-  position: relative;
-  z-index: 1;
-  padding: 44px 0;
-}
-
-.h2{
-  font-family: var(--h);
-  font-weight: 900;
-  letter-spacing: -0.01em;
-  margin: 0 0 10px;
-  font-size: 28px;
-}
-.section-lead{
-  color: var(--muted);
-  margin: 0 0 18px;
-  font-size: 14px;
-  max-width: 80ch;
-}
-
-.split{
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
-}
-
-.list{
-  display:grid;
-  gap: 12px;
-}
-
-.item{
-  border: 1px solid var(--border);
-  background: rgba(255,255,255,.03);
-  border-radius: var(--radius);
-  padding: 18px;
-}
-.item b{
-  font-family: var(--h);
-  font-weight: 900;
-  letter-spacing: .1px;
-}
-.item small{
-  display:block;
-  color: var(--muted);
-  margin-top: 6px;
-  font-size: 13px;
-}
-
-.projects{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.project{
-  position: relative;
-  overflow:hidden;
-  min-height: 190px;
-}
-.project:before{
-  content:"";
-  position:absolute;
-  inset:-40px;
-  background:
-    radial-gradient(420px 160px at 18% 20%, rgba(139,92,246,.18), transparent 60%),
-    radial-gradient(420px 160px at 80% 25%, rgba(34,197,94,.10), transparent 60%);
-  filter: blur(10px);
-  opacity: .95;
-}
-.project > *{ position:relative; z-index: 1; }
-.project p{ color: var(--muted); font-size: 13px; margin: 10px 0 0; }
-.project a{
-  display:inline-flex;
-  margin-top: 12px;
-  font-weight: 900;
-  font-size: 13px;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
-.footer{
-  position: relative;
-  z-index: 1;
-  padding: 24px 0 40px;
-  color: var(--muted);
-  border-top: 1px solid var(--border);
-}
-.footer-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap: 12px;
-  flex-wrap: wrap;
-  padding-top: 16px;
-}
-.mono{
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-/* responsive */
-@media (max-width: 980px){
-  .hero-grid{ grid-template-columns: 1fr; }
-  .actions{ min-width: auto; }
-  .brand{ min-width: auto; }
-  .projects{ grid-template-columns: 1fr; }
-  .split{ grid-template-columns: 1fr; }
-}
+</body>
+</html>
