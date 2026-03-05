@@ -391,3 +391,15 @@ a:hover{ opacity: .92; }
   .projects{ grid-template-columns: 1fr; }
   .split{ grid-template-columns: 1fr; }
 }
+/* Portrait size fix */
+.portrait-card{
+  max-width: 320px;
+  margin: auto;
+}
+
+.portrait{
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
